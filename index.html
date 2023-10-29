@@ -2,16 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <title>Palette Visualiser</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
   </head>
   <body class="bg-gray-100">
-    <div class="container mx-auto px-0 lg:px-40 mt-10">
+    <div class="container mx-auto px-4 sm:px-2 lg:px-40 py-8 mt-10">
       <h1 class="text-3xl font-bold mb-5">Palette Visualiser</h1>
       <p>Visualise hexadecimal colour palettes</p>
-      <pre><code>i.e. gsettings get io.elementary.terminal.settings palette | xclip -selection clip</code></pre>
+      <pre
+        class="whitespace-pre-wrap break-words"><code>i.e. gsettings get io.elementary.terminal.settings palette | xclip -selection clip</code></pre>
       <br />
       <textarea
         id="hex-codes"
